@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Mouse Movements</title>
+	<link type="text/css" rel="stylesheet" href="assets/chap9script06.css" />
+	<!script type="text/javascript" src="assets/chap9script06.js"><!/script>
+</head>
+<body>
+	<img src="assets/circle.gif" alt="left eye" width="24" height="25" id="lEye" />
+	<img src="assets/circle.gif" alt="right eye" width="24" height="25" id="rEye" />
+	<img src="assets/lilRed.gif" alt="left eyeball" width="4" height="4" id="lDot" />
+	<img src="assets/lilRed.gif" alt="right eyeball" width="4" height="4" id="rDot" />
+
+//test
+
+<img onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="assets/robot1.jpg" alt="Smiley" width="32" height="32">
+
+<p>The function bigImg() is triggered when the user mouse pointer is moved over the image. This function enlarges the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image. That function sets the height and width of the image back to normal.</p>
+
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
+
+
+</body>
+</html>

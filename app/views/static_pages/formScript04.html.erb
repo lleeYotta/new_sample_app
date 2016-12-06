@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script type="text/javascript" src="assets/aftershock.js"></script>
+	<title>Password Check</title>
+	<link type="text/css" rel="stylesheet" href="assets/formScript03.css" />
+	<script type="text/javascript" src="assets/formScript04.js"></script>
+</head>
+<body>
+<form action="#">
+	<p><label for="userName">Your name: <input type="text" size="30" id="userName" class="reqd" /></label></p>
+	<p><label for="passwd1">Choose a password: <input type="password" id="passwd1" class="reqd" /></label></p>
+	<p><label for="passwd2">Verify password: <input type="password" id="passwd2" class="reqd passwd1" /></label></p>
+	<p><input type="submit" value="Submit" />&nbsp;<input type="reset" /></p>
+</form>
+
+
+
+<span class="input-label-name">
+
+*
+
+ZIP code
+</span>
+
+<script>
+var spans = document.getElementsByTagName("span");
+
+for(i=0;i<spans.length;i++)
+{
+	if(spans[i].innerHTML.indexOf("ZIP")!=-1)
+	{
+  		//alert(spans[i].innerHTML);
+  		spans[i].innerHTML="* Billing ZIP code";
+	}
+	//break;
+}
+</script>
+
+
+<p>Please enter the order number and the email address from your order confirmation email. To see KOC membership information and all orders placed from your account, please 
+							 <a href="https://account.hallmark.com/?drawerLogin=true">sign in.</a>
+</p>
+
+<script>
+
+
+var spans = document.getElementsByTagName("p");
+
+for(i=0;i<spans.length;i++)
+{
+	if(spans[i].innerHTML.indexOf("confirmation email.")!=-1)
+	{
+  		//alert(spans[i].innerHTML);
+
+  	
+  		test=spans[i].innerText;
+
+  		//alert(test);
+  		test.replace(/confirmation email/i, "confirmation email, and your billing ZIP code");
+
+  		 //alert(test);	
+  		
+	}
+	//break;
+}
+</script>
+
+
+</body>
+</html>
