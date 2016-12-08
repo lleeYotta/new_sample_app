@@ -92,5 +92,24 @@ get '/chap10script06', to: 'static_pages#chap10script06'
 get '/chap10script07', to: 'static_pages#chap10script07'
 
 
+#chap11
+get '/chap11script01', to: 'static_pages#chap11script01' 
+get '/chap11script02', to: 'static_pages#chap11script02'
+get '/chap11script03', to: 'static_pages#chap11script03'
+get '/chap11script04', to: 'static_pages#chap11script04'
+get '/chap11script05', to: 'static_pages#chap11script05'
+get '/chap11script06', to: 'static_pages#chap11script06'
+#get '/chap11script07', to: 'static_pages#chap11script07'
+
+#chap12
+get '/chap12script01', to: 'static_pages#chap12script01' 
+get '/chap12script02', to: 'static_pages#chap12script02'
+get '/chap12script03', to: 'static_pages#chap12script03'
+get '/chap12script04', to: 'static_pages#chap12script04'
+get '/chap12script05', to: 'static_pages#chap12script05'
+get '/chap12script06', to: 'static_pages#chap12script06'
+get '/chap12script07', to: 'static_pages#chap12script07'
+get '/chap12script08', to: 'static_pages#chap12script08'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -86,9 +86,12 @@ class StaticPagesController < ApplicationController
     def chap9script01
     end
 
-    def chap10scrpt02
+    def chap10script02
     end
 
+
+    def chap11script01
+    end
     
    
 end
