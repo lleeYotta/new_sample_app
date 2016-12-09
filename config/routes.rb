@@ -111,5 +111,15 @@ get '/chap12script06', to: 'static_pages#chap12script06'
 get '/chap12script07', to: 'static_pages#chap12script07'
 get '/chap12script08', to: 'static_pages#chap12script08'
 
+
+#chap13
+get '/chap13script01', to: 'static_pages#chap13script01' 
+get '/chap13script02', to: 'static_pages#chap13script02'
+get '/chap13script03', to: 'static_pages#chap13script03'
+get '/chap13script04', to: 'static_pages#chap13script04'
+get '/chap13script05', to: 'static_pages#chap13script05'
+get '/chap13script06', to: 'static_pages#chap13script06'
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
